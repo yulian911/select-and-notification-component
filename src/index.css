@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+#notification-root{
+    position:fixed;
+    top:20px;
+    right: 20px;
+    z-index: 9999;
+}
+
+.notification{
+    opacity:0;
+    transition-property: opacity;
+    transition-timing-function: ease;
+    transition-duration: 300ms;
+}
+
+.option-badge:hover >.remove-btn,
+.option-badge:focus >.remove-btn{
+    color:hsl(0,100%,50%)
+}
+
+.option-badge >.remove-btn
+{
+    font-size:1.25em;
+    color:#777;
+}
